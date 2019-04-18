@@ -1,1 +1,8 @@
-{}
+{
+  "challenge4_test.py::TestChallenge4::()::test_challenge_4_1": true,
+  "challenge4_test.py::TestChallenge4::()::test_challenge_4_2": true,
+  "challenge4_test.py::TestChallenge4::()::test_challenge_4_3": true,
+  "challenge4_test.py::TestChallenge4::()::test_challenge_4_4": true,
+  "challenge4_test.py::TestChallenge4::()::test_challenge_4_5": true,
+  "challenge4_test.py::TestChallenge4::()::test_challenge_4_6": true
+}
