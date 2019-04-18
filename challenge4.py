@@ -59,7 +59,7 @@ def solve(equation):
         #print(operations_stack, numbers_stack, character)
         if len(numbers_stack) ==2 and operations_stack:
             #concaténer les deux nombres pis l'opération et remettre dans numbers
-            numbers_stack.append(numbers_stack.pop(0) + ' ' + numbers_stack.pop(0) + ' ' + operations_stack.pop(0) + ' ')
+            numbers_stack.append(numbers_stack.pop(0).strip() + ' ' + numbers_stack.pop(0).strip() + ' ' + operations_stack.pop(0) + ' ')
         #print(numbers_stack, operations_stack, character)
 
     return numbers_stack[0][:-1] # ou .strip() pour enlever le dernier ' '
