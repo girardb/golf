@@ -1,3 +1,5 @@
 {
+  "challenge3_test.py::TestChallenge1::()::test_challenge_3_1": true,
+  "challenge3_test.py::TestChallenge1::()::test_challenge_3_2": true,
   "challenge4_test.py::TestChallenge4::()": true
 }
