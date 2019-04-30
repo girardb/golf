@@ -21,7 +21,8 @@ def permut(words, matrix, index):
         max_length = max([len(' '.join(row)) for row in matrix])
         x=copy.deepcopy(matrix) # pourquoi est-ce que j'ai besoin de ca, ahhhhhhhhhh
 
-        # ca maximise l'aire mais pas le périmètre
+        # ca maximise l'addition de l'aire et du périmètre
+        # si c'est pas correct il faudrait que je compare en premier l'aire et si elles sont égales, ensuite le périmètre
 
         return ((2*(max_length+4) + 2*len(matrix)+2) + ((len(matrix)+2)*(max_length+4)), x)
     else:

@@ -1,11 +1,11 @@
 from threading import Timer
 from time import sleep
 
-def time_sort(array):
+def time_sort(array): # ca n'a probablement pas le fonctionnement prévu quand l'array est vraiment grand parce que je pars les thread 1 par 1. Par exemple si le premier thread fini avant que le dernier soit partie ca cause problème
     threads=[]
     sorted_array = []
     for elem in array:
-        thread=Timer(elem, lambda x: sorted_array.append(x), args=(elem,))
+        thread=Timer(0.01*elem, lambda x: sorted_array.append(x), args=(elem,))
         threads.append(thread)
         thread.start()
 
