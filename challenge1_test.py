@@ -14,3 +14,8 @@ class TestChallenge1(object):
         f = "She believed"
         s = "She lied"
         assert challenge1.c(f,s) == '[She] be[lie]ve[d]'
+
+    def test_challenge_1_4(self):
+        f = "She believed"
+        s = "Shebe lied"
+        assert challenge1.c(f,s) == '[She] [belie]ve[d]'

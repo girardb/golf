@@ -37,28 +37,5 @@ def solve(e):
     return n[0][:-1]
 
 #print(solve('(5 - 6) * 2 / (1 + 3)'))
-
-
-"""
-levels = equation.count('(')
-def solve2(equation, index):
-    if index ==len(equation):
-        return #...
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #print(c('(5 - 6) * 2 / (1 + 3)'))
 #print(c('((5 - 3) * ((4 / 2 - 1) * 2))'))

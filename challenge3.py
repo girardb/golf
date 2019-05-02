@@ -1,6 +1,8 @@
 from threading import Timer
 from time import sleep
 
+#Est-ce que ca a besoin d'être timesort ou n'importe quel algo de sort c'est correct
+
 def time_sort(array): # ca n'a probablement pas le fonctionnement prévu quand l'array est vraiment grand parce que je pars les thread 1 par 1. Par exemple si le premier thread fini avant que le dernier soit partie ca cause problème
     threads=[]
     sorted_array = []
