@@ -13,7 +13,7 @@ fourth -> (0,3), (1,2), (2,1), (3,0)
 # 4. Choisir elle qui minimise l'aire et le périmètre
 # 5. Return un cadre avec ces dimensions là avec les mots en input
 """
-list_of_words=['1','2','3','4']
+list_of_words=['1','2','3']
 o_matrix = [[list_of_words[0]]]
 
 def permut(words, matrix, index):
@@ -28,7 +28,7 @@ def permut(words, matrix, index):
     else:
         # same line
         matrix[-1].append(words[index])
-        print('same_line', matrix)
+        #print('same_line', matrix)
         same_line = permut(words, matrix, index+1)
 
         # revert the same_line thingy
@@ -36,11 +36,11 @@ def permut(words, matrix, index):
 
         # descendre d'une ligne
         matrix.append([words[index]])
-        print('next_line', matrix)
+        #print('next_line', matrix)
         next_line = permut(words, matrix, index+1)
         # Remove the empty bracket caused by popping from a bracket with 1 element
         matrix.pop()
-        print(same_line, next_line)
+        #print(same_line, next_line)
         return min(same_line, next_line)
 
 def print_in_a_frame(words, matrix):
@@ -51,4 +51,4 @@ def print_in_a_frame(words, matrix):
         print(f'* {words_in_row:{size}} *')
     print('*' * (size + 4))
 
-print_in_a_frame(list_of_words, permut(list_of_words[1:], o_matrix, 0))
+#print_in_a_frame(list_of_words, permut(list_of_words[1:], o_matrix, 0))
