@@ -1,5 +1,5 @@
 """
-#ERREURS S'ILS Y A DES CHIFFRES >= 10 parce que le chiffre n'est pas juste un digit.
+#ERREUR S'IL Y A DES CHIFFRES >= 10 parce que le chiffre n'est pas juste un digit.
 def solve2(e):
     p=[[[],[]]];n=[];o=[]
     for c in e:
@@ -13,7 +13,7 @@ def solve2(e):
 """
 
 #Fonctionne mais c'est rendu un mastodonte
-def solve(e):
+def s(e):
     p=[[[],[]]];n=[];o=[];x=0;l=''
     for c in e:
         d=c.isdigit()
