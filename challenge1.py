@@ -1,5 +1,5 @@
 def c(f,s):
-    o='';j=0;x=0
+    o='';j=x=0
     for i in f:
         if s[j]==' ':j+=1
         d=i.lower()==s[j].lower()
