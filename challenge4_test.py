@@ -26,6 +26,7 @@ class TestChallenge4(object):
         equation='4 ^ (3 - 1)'
         assert challenge4.s(equation) == '4 3 1 - ^'
 
+    # Important
     def test_challenge_4_7(self):
         equation='((4+7)*12+2)/4'
         assert challenge4.s(equation) == '4 7 + 12 * 2 + 4 /'
@@ -34,6 +35,7 @@ class TestChallenge4(object):
         equation='(((((((((1+2)))))))))'
         assert challenge4.s(equation) == '1 2 +'
 
+    # Important
     def test_challenge_4_9(self):
         equation='(((12)+(21)))'
         assert challenge4.s(equation) == '12 21 +'
